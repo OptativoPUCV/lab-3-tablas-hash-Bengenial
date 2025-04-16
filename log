@@ -68,3 +68,9 @@ hashmap.c:91:61: error: return makes pointer from integer without a cast [-Werro
                                                           ~~~^~~~~~~~~
 cc1.exe: all warnings being treated as errors
 4a12de3
+Wed, Apr 16, 2025  8:15:59 AM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|4
+total_score: 30/70
+29d1cd9
