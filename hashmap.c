@@ -67,6 +67,10 @@ HashMap * createMap(long capacity) {
     if (map == NULL) return NULL;
 
     map->buckets = (Pair **)malloc(sizeof(Pair) * capacity);
+    if (map->buckets == NULL){
+        free(map);
+        return NULL;
+    }
 
     for (int i = 0; i < capacity; i++){
         map->buckets[i] = NULL;
