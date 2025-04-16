@@ -74,7 +74,6 @@ void enlarge(HashMap * map) {
     }
 
     map->size = 0;
-    map->current = -1;
 
     for (long j = 0; j < oldCapacity; j++){
         if(OldBuckets[j] != NULL && OldBuckets[j]->key != NULL)
