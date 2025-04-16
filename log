@@ -195,3 +195,12 @@ hashmap.c:61:12: error: unused variable 'OldBuckets' [-Werror=unused-variable]
             ^~~~~~~~~~
 cc1.exe: all warnings being treated as errors
 59f0d6b
+Wed, Apr 16, 2025  8:50:30 AM: 
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:61:12: error: unused variable 'OldBuckets' [-Werror=unused-variable]
+     Pair **OldBuckets = map->buckets;
+            ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+b689fa9
