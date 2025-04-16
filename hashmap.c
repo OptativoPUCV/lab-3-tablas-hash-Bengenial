@@ -69,6 +69,9 @@ void enlarge(HashMap * map) {
         return;
     }
 
+    for (long i = 0; i < map->capacity; i++){
+        map->buckets[i] = NULL;
+    }
 
     map->size = 0;
 
