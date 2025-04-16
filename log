@@ -204,3 +204,14 @@ hashmap.c:61:12: error: unused variable 'OldBuckets' [-Werror=unused-variable]
             ^~~~~~~~~~
 cc1.exe: all warnings being treated as errors
 b689fa9
+Wed, Apr 16, 2025  9:05:06 AM: 
+ hashmap.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:73:18: error: statement with no effect [-Werror=unused-value]
+     map->current -1;
+     ~~~~~~~~~~~~~^~
+cc1.exe: all warnings being treated as errors
+986cf51
