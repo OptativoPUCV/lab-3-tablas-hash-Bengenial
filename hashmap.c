@@ -70,7 +70,7 @@ void enlarge(HashMap * map) {
     map->buckets = (Pair **)malloc(sizeof(Pair*) * 2);
     if (map->buckets == NULL){
         free(map);
-        return NULL;
+        return;
     }
 
     map->size = 0;
