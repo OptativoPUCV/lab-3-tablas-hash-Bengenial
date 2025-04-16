@@ -257,3 +257,17 @@ Wed, Apr 16, 2025  9:05:52 AM:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 b9774c7
+Wed, Apr 16, 2025  9:07:11 AM: 
+ hashmap.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:73:16: error: 'return' with a value, in function returning void [-Werror]
+         return NULL;
+                ^~~~
+hashmap.c:58:6: note: declared here
+ void enlarge(HashMap * map) {
+      ^~~~~~~
+cc1.exe: all warnings being treated as errors
+301f897
