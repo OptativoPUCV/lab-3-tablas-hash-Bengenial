@@ -63,11 +63,7 @@ void enlarge(HashMap * map) {
 
     map->capacity *= 2;
     map->buckets = (Pair **)malloc(sizeof(Pair*) * map->capacity);
-    if (map->buckets == NULL){
-        map->capacity = oldCapacity;
-        map->buckets = OldBuckets;
-        return;
-    }
+    
 
     for (long i = 0; i < map->capacity; i++){
         map->buckets[i] = NULL;
