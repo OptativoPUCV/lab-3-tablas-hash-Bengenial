@@ -84,7 +84,7 @@ void eraseMap(HashMap * map,  char * key) {
     if (par == NULL) return;
 
     par->key = NULL;
-    map->capacity = map->capacity - 1;
+    map->size--;
 
 }
 
