@@ -104,3 +104,14 @@ Wed, Apr 16, 2025  8:32:27 AM:
  tests:  12|2
 total_score: 50/70
 6ea85cb
+Wed, Apr 16, 2025  8:38:07 AM: 
+ hashmap.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'nextMap':
+hashmap.c:119:25: error: 'i' undeclared (first use in this function)
+         if(map->buckets[i] != NULL){
+                         ^
+hashmap.c:119:25: note: each undeclared identifier is reported only once for each function it appears in
+69180c3
