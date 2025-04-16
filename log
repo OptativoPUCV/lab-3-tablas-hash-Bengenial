@@ -242,3 +242,13 @@ hashmap.c:73:18: error: statement with no effect [-Werror=unused-value]
      ~~~~~~~~~~~~~^~
 cc1.exe: all warnings being treated as errors
 43d15be
+Wed, Apr 16, 2025  9:05:45 AM: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:71:9: error: expected expression before ')' token
+     if ()
+         ^
+149abcf
