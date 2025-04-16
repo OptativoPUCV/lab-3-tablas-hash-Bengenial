@@ -175,3 +175,14 @@ Wed, Apr 16, 2025  8:47:09 AM:
  tests:  16|1
 total_score: 60/70
 031e0c1
+Wed, Apr 16, 2025  8:50:22 AM: 
+ hashmap.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:61:12: error: unused variable 'OldBuckets' [-Werror=unused-variable]
+     Pair **OldBuckets = map->buckets;
+            ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+21c06eb
