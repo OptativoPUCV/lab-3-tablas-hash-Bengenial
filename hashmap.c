@@ -90,7 +90,7 @@ HashMap * createMap(long capacity) {
     HashMap *map = (HashMap *)malloc(sizeof(HashMap));
     if (map == NULL) return NULL;
 
-    map->buckets = (Pair **)malloc(sizeof(Pair) * capacity);
+    map->buckets = (Pair **)malloc(sizeof(Pair*) * capacity);
     if (map->buckets == NULL){
         free(map);
         return NULL;
